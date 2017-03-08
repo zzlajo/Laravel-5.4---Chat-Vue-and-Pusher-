@@ -38,9 +38,17 @@ window.axios.defaults.headers.common = {
  * allows your team to easily build robust real-time web applications.
  */
 
-// import Echo from "laravel-echo"
+import Echo from "laravel-echo"
 
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: 'b7a47d68a19964f68b5c'
+});
+
+// Echo.channel('chatroom')
+// // .here()
+// // .joining()
+// // .leaving()
+//     .listen('.MessagePosted', (e) => {
+//         console.log(7878787771212);
+//     });
